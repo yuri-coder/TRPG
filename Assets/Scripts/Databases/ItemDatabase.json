@@ -1,0 +1,64 @@
+{
+	"consumable" : {
+		"id" : {
+			"001" : {
+				"name" : "Weak Health Potion",
+				"description" : "It's practically water at this point.",
+				"value" : 5,
+				"imagePath" : ""
+			}
+		}
+	},
+
+	"weapon" : {
+		"id" : {
+			"101" : {
+				"name" : "Ye Olde Bent Wooden Spoon",
+				"description" : "How did you even manage to bend a wooden spoon?",
+				"health" : 0,
+				"attack" : 2,
+				"defence" : 1,
+				"magic" : 2,
+				"resistance": 1,
+				"movement" : 0,
+				"accuracy" : 0,
+				"elementResists" : {
+					"fire" : 0,
+					"ice" : 0,
+					"earth" : 5,
+					"light" : 0,
+					"dark" : 0
+				},
+				"primaryAttacks" : {
+					"slice" : 1
+				},
+				"counterAttacks" : {
+				}, 
+				"value" : 10,
+				"imagePath" : ""
+			}
+		}
+	},
+
+	"armor" : {
+		"id" : {
+			"201" : {
+				"name" : "Paper Bag",
+				"description" : "If I can't see them, they can't see me, right?",
+				"value" : 10,
+				"imagePath" : ""
+			}
+		}
+	},
+
+	"material" : {
+		"id" : {
+			"301" : {
+				"name" : "Ominous Fluid",
+				"description" : "Foul smelling, foul looking, foul tasting... wait, why did you taste it?!",
+				"value" : 1,
+				"imagePath" : ""
+			}
+		}
+	}
+}

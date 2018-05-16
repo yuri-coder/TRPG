@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Material : Item{
+public abstract class Armor : Equipment {
 
+	
 
 }

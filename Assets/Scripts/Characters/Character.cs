@@ -8,7 +8,7 @@ public class Character : MonoBehaviour
     public int level, health, attack, magic, defence, resistance;
     public int movement;
     public double accuracy; //Base is 100;
-    public List<double> elementResists;
+    public Dictionary<ElementalTypes, double> elementResists;
 
     public Weapon weapon;
     public Equipment headEquipment;
