@@ -2,9 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Attack {
+public class Weapon : Item{
 
-   
 	
 }
-
