@@ -2,33 +2,40 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Character : MonoBehaviour
+public abstract class Character : MonoBehaviour
 {
-
+    //Main Stats
     public int level, health, attack, magic, defence, resistance;
     public int movement;
     public double accuracy; //Base is 100;
     public Dictionary<ElementalTypes, double> elementResists;
 
+    //Equippables
     public Weapon weapon;
     public Equipment headEquipment;
     public Equipment chestEquipment;
     public Equipment legEquipment;
 
-    public void PreCombat()
-    {
+    //Attacks
+    public List<Attack> primaryAttacks; //Attacks that can be used to initiate combat
+    public List<Attack> counterAttacks; //Attacks that can be used during CounterCombat
 
-    }
+    //Runs at the start of a combat phase, before any attacks are used.
+    public abstract void PreCombat();
 
-    public void CounterCombat()
-    {
+    //When attacked, runs after the opponent has used their attack
+    public abstract void CounterCombat();
 
-    }
+    //Runs at the end of a combat phase, after regular attacks and counter attacks have been resolved
+    public abstract void PostCombat();
 
-    public void PostCombat()
-    {
+    //Runs at the start of every turn, regardless of friendly or enemy turn. 
+    //Events that occur in StartOfTurn should check if it depends on if it's the ally or enemy turn.
+    public abstract void StartOfTurn();
 
-    }
+    //Runs at the end of every turn, regardless of friendly or enemy turn. 
+    //Events that occur in EndOfTurn should check if it depends on if it's the ally or enemy turn.
+    public abstract void EndOfTurn();
 }
 
 /*public class GameManager
