@@ -11,7 +11,8 @@ public abstract class Attack {
     public bool isPhysical; //True if physical, false if magical
     public double accuracy; //Given as whole % value (10 as opposed to 0.1)
 
-    
+    //Called when using an attack
+    public abstract void UseAttack(Character user, Character target);
 
 
 }
