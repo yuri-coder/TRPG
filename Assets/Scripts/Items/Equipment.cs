@@ -12,6 +12,8 @@ public abstract class Equipment : Item {
     public double accuracy; //Given as whole % value (10 as opposed to 0.1)
     public Dictionary<ElementalTypes, double> elementalResists; //Given as whole % value (10 as opposed to 0.1)
 
+    public EquipmentSlots slot;
+
     public List<Attack> primaryAttacks;
     public List<Attack> counterAttacks;
 
