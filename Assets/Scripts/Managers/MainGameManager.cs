@@ -14,4 +14,9 @@ public class MainGameManager : MonoBehaviour {
         if (Input.GetKey("escape"))
             Application.Quit();
     }
+
+    public void PrintSomething(string something)
+    {
+        print(something);
+    }
 }
