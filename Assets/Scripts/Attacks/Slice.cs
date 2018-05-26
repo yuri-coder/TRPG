@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Slice : Attack
 {
-    public override void UseAttack(Character user, Character target)
+    public override void UseAttack(Unit user, Unit target)
     {
         throw new System.NotImplementedException();
     }

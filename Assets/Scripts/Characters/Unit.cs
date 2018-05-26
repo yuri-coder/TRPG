@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Character : MonoBehaviour
+public abstract class Unit : MonoBehaviour
 {
     //Main Stats
     public int level, health, attack, magic, defence, resistance;
