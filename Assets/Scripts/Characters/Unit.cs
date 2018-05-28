@@ -10,6 +10,9 @@ public abstract class Unit : MonoBehaviour
     public double accuracy; //Base is 100;
     public Dictionary<ElementalTypes, double> elementResists;
 
+    //Sub/Hidden Stats
+    public double healthGrowth, attackGrowth, magicGrowth, defenceGrowth, resistanceGrowth; //Determine how much a stat should raise per level. Ex: 0.5 = 50% chance of gaining 1 point on level up, 2.7 = guaranteed 2 + 70% chance at 1 extra point, etc.
+
     //Attacks
     public List<Attack> primaryAttacks; //Attacks that can be used to initiate combat
     public List<Attack> counterAttacks; //Attacks that can be used during CounterCombat

@@ -2,13 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Slice : Attack
-{
+public abstract class Aura : Ability{
 
-    public static int testInt = 5;
+    public int turns; //The remaining number of turns the aura remains active
 
     public override void Use(Unit user, Unit target)
     {
-        throw new System.NotImplementedException();
+        Use(user);
     }
+
+    
+
 }

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -83,7 +84,7 @@ public abstract class Ally : Unit {
     {
         if (cons == null)
             return;
-        
+
     }
 
     //Removes linked primary/counter attacks from the equipment, resets stats gained from the equipment, and then sets the equipment slot to null
